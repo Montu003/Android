@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_60dp"
+        android:paddingEnd="@dimen/_3dp"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/senderMessage"
+            android:text="This is my message"
+            android:background="@drawable/my_msg_back"
+            android:textColor="#FFFFFF"
+            android:padding="@dimen/_20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/senderMessageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/senderMessage"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_5dp"
+
+            android:text="10-08-2021 05:12 pm"
+            android:textSize="@dimen/_10sp" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

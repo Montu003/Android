@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DialogActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="24dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_simple_dialog"
+            android:text="Show Simple Alert Dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClicked"/>
+
+
+        <Button
+            android:id="@+id/btn_single_choice_dialog"
+            android:text="Show Single Choice Dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClicked"/>
+
+        <Button
+            android:id="@+id/btn_single_choice_dialog2"
+            android:text="Show Single Choice Dialog (Radio)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClicked"/>
+
+        <Button
+            android:id="@+id/btn_multi_choice_dialog"
+            android:text="Show Multi Choice Dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClicked"/>
+
+        <Button
+            android:id="@+id/btn_custom_dialog"
+            android:text="Show Custom Dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClicked"/>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_dob"
+                android:hint="dd/MM/yyyy"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/iv_date"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

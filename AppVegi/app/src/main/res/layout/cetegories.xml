@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable
+            name="model"
+            type="com.example.appvegi.modele.SubCategori" />
+
+        <variable
+            name="adapter"
+            type="com.example.appvegi.adapterr.SubCategoriesAdapter" />
+
+    </data>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llTitile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Grocery"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSeeAll"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:text="See All"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/rvCatList"
+         android:padding="5dp"
+         android:orientation="horizontal"
+         android:scrollbars="none"
+         tools:listitem="@layout/cetegories"
+         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>

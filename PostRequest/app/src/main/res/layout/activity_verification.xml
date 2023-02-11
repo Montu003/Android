@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Verification">
+
+    <EditText
+        android:id="@+id/et_email"
+        android:hint="Enter email address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.chaos.view.PinView
+        android:id="@+id/et_pin"
+        android:inputType="number"
+        app:itemCount="6"
+        app:itemHeight="40dp"
+        app:itemWidth="40dp"
+        app:itemRadius="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingClass"/>
+
+    <Button
+        android:id="@+id/btn_verify"
+        android:text="Verify"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

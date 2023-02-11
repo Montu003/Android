@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_montu"
+        android:src="@drawable/images_5"
+        android:scaleType="centerCrop"
+        android:layout_width="80dp"
+        android:layout_height="120dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iphone 8"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            android:textStyle="bold"/>
+
+        <RatingBar
+            android:id="@+id/tv_rating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/black"
+            android:rating="3"/>
+
+        <TextView
+            android:id="@+id/tv_mrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10000"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/tv_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="black"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:src="@drawable/ic_profile_icon"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="100dp"/>
+
+</LinearLayout>

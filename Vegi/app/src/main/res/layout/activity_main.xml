@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    </data>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".HomeActivity">
+
+            <LinearLayout
+                android:id="@+id/tool_Bar"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/orange"
+                android:fitsSystemWindows="true"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_baseline_reorder_24"
+                    app:tint="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="vegi"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/the_all_in_one_food_shop"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btn_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_baseline_search_24"
+                    app:tint="@color/white" />
+
+            </LinearLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+            <!--        <ProgressBar-->
+            <!--            android:id="@+id/btn_ProgressBar"-->
+            <!--            android:visibility="gone"-->
+            <!--            android:layout_gravity="center"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"/>-->
+
+            <!-- app:labelVisibilityMode="labeled"-->
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#98595963"
+                app:itemIconTint="@color/black"
+                app:itemTextColor="@color/black"
+                app:menu="@menu/item_menu" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="start"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:background="@color/orange"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="200dp">
+
+            <TextView
+                android:text="VEGI"
+                android:fontFamily="@font/gilroy_extrabold"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="THE ALL IN ONE FOOD SHOP"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/bell"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:tint="@color/orange" />
+
+                <TextView
+                    android:text="Notification"
+                    android:textSize="20dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/star"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:tint="@color/orange" />
+
+                <TextView
+                    android:text="Ratings Reviews"
+                    android:textSize="20dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/question_mark"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:text="FAQs"
+                    android:textSize="20dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/contacts"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:tint="@color/orange" />
+
+                <TextView
+                    android:text="Terms Condition"
+                    android:textSize="20dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_baseline_verified_user_24"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:tint="@color/orange" />
+
+                <TextView
+                    android:text="Privacy Policy"
+                    android:textSize="20dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_sharp_apartment_24"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:tint="@color/orange" />
+
+                <TextView
+                    android:text="About Us"
+                    android:textSize="20dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <TextView
+                android:paddingHorizontal="10dp"
+                android:text="Contact Us"
+                android:textColor="@color/orange"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:paddingHorizontal="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Call Us: +91 "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="1234567890"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingHorizontal="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Mail us: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="retrytech@gmail.com"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

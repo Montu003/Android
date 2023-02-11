@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+<!--    <com.chaos.view.PinView-->
+<!--        android:id="@+id/et_pin"-->
+<!--        android:inputType="number"-->
+<!--        app:itemCount="6"-->
+<!--        app:itemHeight="40dp"-->
+<!--        app:itemWidth="40dp"-->
+<!--        app:itemRadius="8dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        tools:ignore="MissingClass" />-->
+
+    <com.chaos.view.PinView
+        app:itemCount="6"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

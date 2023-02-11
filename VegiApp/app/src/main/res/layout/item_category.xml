@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="com.example.vegiapp.model.CategoryPage.Data"/>
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingBottom="10dp"
+            android:id="@+id/llTitile"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginHorizontal="3dp"
+                android:id="@+id/ivimage"
+                tools:src="@tools:sample/avatars"
+                android:layout_width="105dp"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:id="@+id/tvtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gilroy_semibold"
+                android:text="@{model.title}"
+                android:textAllCaps="true"
+                android:textSize="15dp"
+                tools:text="@tools:sample/first_names" />
+
+            <!--        <TextView-->
+            <!--            android:layout_gravity="center"-->
+            <!--            android:textSize="15dp"-->
+            <!--            android:text='@{""+model}'-->
+            <!--            android:textStyle="bold"-->
+            <!--            android:padding="10dp"-->
+            <!--            android:visibility="gone"-->
+            <!--            android:id="@+id/tvPrice"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"/>-->
+
+            <!--        <androidx.appcompat.widget.AppCompatButton-->
+            <!--            android:layout_gravity="center"-->
+            <!--            android:textSize="15dp"-->
+            <!--            android:text='Add'-->
+            <!--            android:textColor="@color/white"-->
+            <!--            android:textStyle="bold"-->
+            <!--            android:padding="5dp"-->
+            <!--            android:visibility="gone"-->
+            <!--            android:background="@color/orange"-->
+            <!--            android:id="@+id/btAdd"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"/>-->
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

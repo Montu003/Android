@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "649768130790",
+    "project_id": "vegi-6698d",
+    "storage_bucket": "vegi-6698d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649768130790:android:7b7154d05b6bdf8e264327",
+        "android_client_info": {
+          "package_name": "com.example.vegiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649768130790-2a8amotimbrcirvtoieh36jget451g0r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vegiapp",
+            "certificate_hash": "2718cece1763e758f3aa70950a35fd9b329e6b30"
+          }
+        },
+        {
+          "client_id": "649768130790-ouukr01r293949n6v0jgog25kq3cnt16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0kl1jcDpgz0pgreZMaedvLMX4k8iOh4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649768130790-ouukr01r293949n6v0jgog25kq3cnt16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_40dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:backgroundTint="@color/black"
+            android:text="@string/log_out" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_setgoogleemail"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_logout"
+            android:textSize="@dimen/_15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/rigister_emil_google" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

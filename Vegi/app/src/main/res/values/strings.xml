@@ -1,0 +1,12 @@
+<resources>
+    <string name="search_item">Search Items</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="the_all_in_one_food_shop">the all in one food shop</string>
+    <string name="categories">Categories</string>
+    <string name="seeall">SeeAll</string>
+    <string name="your_coupon">Your Coupon</string>
+    <string name="discount">Discount:</string>
+    <string name="minimum_amount">Minimum Amount :</string>
+    <string name="apply">Apply</string>
+</resources>

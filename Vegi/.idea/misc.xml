@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable-v24/bg_gradient.xml" value="0.1835" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable-v24/bg_gradient_10.xml" value="0.1835" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable-v24/bg_gradient_11.xml" value="0.1835" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable-v24/bg_gradient_12.xml" value="0.1835" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable/background.xml" value="0.138" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable/background_error.xml" value="0.138" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable/bg_gradient.xml" value="0.138" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable/bg_gradient_11.xml" value="0.138" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable/bg_gradient_13.xml" value="0.138" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable/bg_gradient_14.xml" value="0.138" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable/border_color.xml" value="0.138" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.138" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1835" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.138" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable/ic_baseline_keyboard_arrow_up_24.xml" value="0.138" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable/ic_baseline_reorder_24.xml" value="0.1835" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1835" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/drawable/ic_favorite_like.xml" value="0.138" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/activity_bottom_sheet.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/activity_categor.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/activity_clickevent.xml" value="0.264" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/activity_delivery_details.xml" value="0.264" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/activity_first.xml" value="0.264" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/activity_form_update.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/activity_formfield.xml" value="0.2" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/activity_main.xml" value="0.22395833333333334" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/activity_my_complaint.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/activity_my_delivery_address.xml" value="0.264" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/activity_my_wishlist.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/activity_order_details.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/activity_orders_click.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/activity_out_put.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/activity_payment_summary.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/activity_splace.xml" value="0.264" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/activity_verification.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/delivery_list.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/demo.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/first.xml" value="0.2" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/fragment_cart.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/fragment_category.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/fragment_complain.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/fragment_complaint.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/fragment_first.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/fragment_order.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/fragment_profile.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/fragment_second.xml" value="0.22395833333333334" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/item_buttomsheet.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/item_cart.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/item_category.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/item_category1.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/item_delivery.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/item_deliverydetails.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/item_order_details.xml" value="0.264" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/item_search_category.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/item_search_category1.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/item_sub.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/item_sub_category.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/item_subcategory.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/itemauto.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/itemautosilder.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/order_details.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/output.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/row_item.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/layout/row_item1.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android Project/Vegi/app/src/main/res/menu/item_menu.xml" value="0.23802083333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

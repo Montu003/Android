@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.example.nestedrecyclerview.model.SubCategory" />
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            tools:text="@tools:sample/full_names"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_thumbnail"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:baselineAligned="false"
+                android:padding="5dp"
+                tools:src="@tools:sample/avatars"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_1" />
+
+            <LinearLayout
+                android:id="@+id/cardparnet"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{model.title}"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{model.type}"
+                    android:textColor="#676363"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:text='@{""+model.rating}'
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!--            <RatingBar-->
+                <!--                android:id="@+id/rating"-->
+                <!--                style="@style/Widget.AppCompat.RatingBar.Small"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginTop="5dp"-->
+                <!--                android:numStars="5"-->
+                <!--                android:layout_gravity="center"-->
+                <!--                android:progressTint="#FB8C00"-->
+                <!--                android:rating="3" />-->
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

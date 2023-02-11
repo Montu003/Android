@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    </data>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="end"
+            android:src="@drawable/cancel"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            app:tint="@color/orange" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            app:civ_fill_color="#D5CCC9"
+            app:civ_border_color="@color/orange"
+            app:civ_border_width="3dp"
+            android:src="@drawable/ic_baseline_person_24"/>
+
+        <EditText
+            android:id="@+id/mo_name"
+            android:hint="Enter your name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/mo_email"
+            android:hint="Enter your Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_gradient_14"
+            android:text="submit"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</layout>

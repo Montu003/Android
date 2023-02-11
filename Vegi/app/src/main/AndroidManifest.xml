@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vegi">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/search_item"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Vegi">
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activity.BottomSheetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PaymentSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DeliveryDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MyComplaintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MyWishlistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.formfield"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MyDeliveryAddress"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OrdersClick"
+            android:exported="true" />
+        <activity
+            android:name=".activity.OrderDetails"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FirstActivity"
+            android:exported="false"
+            android:label="@string/search_item"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing|adjustResize" />
+        <activity
+            android:name=".activity.Clickevent"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OutPutActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing|adjustResize" />
+        <activity
+            android:name=".activity.SplaceActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing|adjustResize" />
+    </application>
+
+</manifest>

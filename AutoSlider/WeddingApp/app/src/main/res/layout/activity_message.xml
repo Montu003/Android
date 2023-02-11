@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.app.activitys.MessageActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/_35dp"
+            android:layout_height="@dimen/_35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_2dp"
+            android:layout_marginTop="@dimen/_40dp"
+            android:paddingStart="@dimen/_12sp"
+            android:paddingEnd="@dimen/_2dp"
+            android:src="@drawable/left_arrow" />
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_40dp"
+            android:layout_toEndOf="@id/btn_back"
+            android:src="@drawable/ktv_image" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_toEndOf="@id/iv_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:textSize="@dimen/_18sp"
+                android:textStyle="bold"
+                android:textColor="@color/name_text"
+                android:maxLines="1"
+                android:text="User Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_online"
+                android:textColor="@color/name_text"
+                android:textSize="@dimen/_13sp"
+                android:text="Online"
+                android:layout_marginTop="@dimen/_2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_message"
+        android:layout_below="@id/top_bar"
+        android:layout_above="@id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:paddingBottom="@dimen/_10dp"
+        android:paddingTop="@dimen/_10dp"
+        android:background="@color/teal_200"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_toStartOf="@id/btn_send"
+            android:background="@android:color/transparent"
+            android:hint="Type Something"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_14sp" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/_15dp"
+            android:id="@+id/btn_send"
+            android:src="@drawable/iv_send"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/_25dp"
+            android:layout_height="@dimen/_25dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

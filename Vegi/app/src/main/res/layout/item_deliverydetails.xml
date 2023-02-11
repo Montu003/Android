@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.example.vegi.model.Delivery" />
+
+    </data>
+    <androidx.cardview.widget.CardView
+        android:foreground="@drawable/border_color"
+        android:clickable="true"
+        android:id="@+id/btn_car"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="30dp"
+            android:backgroundTint="@color/orange"
+            android:layout_height="match_parent">
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="30dp"
+            android:buttonTint="@color/orange"
+            android:layout_height="match_parent" />
+
+        </RadioGroup>
+
+<!--                <ImageView-->
+<!--            android:id="@+id/iv_redioButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:src="@drawable/ic_baseline_radio_button_unchecked_24"-->
+<!--            app:tint="@color/black" />-->
+
+        <LinearLayout
+            android:id="@+id/btn_details"
+            android:layout_marginEnd="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@{model.name}"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_gradient_13"
+                    android:backgroundTint="#FACEC0"
+                    android:gravity="center"
+                    android:text="Home"
+                    android:textColor="@color/orange" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_gradient_13"
+                    android:gravity="center"
+                    android:text="Default"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{model.address}"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_phone_24"
+                    app:tint="@color/orange" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@{model.mobile}" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@{model.number}" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

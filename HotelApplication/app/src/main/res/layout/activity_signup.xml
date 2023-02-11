@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btn_BACK"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Create your account with\nTelegram"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="16dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:textStyle="bold"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/et_contact"
+        android:drawablePadding="16dp"
+        android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter contact"
+        android:textStyle="bold"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:drawablePadding="16dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter email address"
+        android:textStyle="bold"
+        android:inputType="textPersonName"/>
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:drawablePadding="16dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter password"
+        android:textStyle="bold"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/et_Confirmpassword"
+        android:drawablePadding="16dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Confirmpassword"
+            android:textStyle="bold"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1E88E5"
+        android:text="Register her"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

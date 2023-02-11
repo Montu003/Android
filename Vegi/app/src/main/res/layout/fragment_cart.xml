@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!--<variable
+            name="model"
+            type="com.example.vegi.model.cartmodel" />
+        -->
+
+        <variable
+            name="list"
+            type="com.example.vegi.adapter.CartAdapter" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragment.CartFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="My Cart"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginBottom="85dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <!--  <ImageView
+                  android:id="@+id/ivIcon"
+                  android:layout_width="120dp"
+                  android:layout_height="120dp"
+                  android:src="@drawable/image_12"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent" />
+
+              <androidx.constraintlayout.widget.ConstraintLayout
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toStartOf="@+id/llLast"
+                  app:layout_constraintStart_toEndOf="@+id/ivIcon"
+                  app:layout_constraintTop_toTopOf="parent">
+
+                  <TextView
+                      android:id="@+id/ivPotates"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="potatoes"
+                      android:textColor="@color/black"
+                      android:textSize="20dp"
+                      android:textStyle="bold"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toTopOf="parent" />
+
+                  <TextView
+                      android:id="@+id/tvKg"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="1.00 Kg"
+                      android:textSize="20dp"
+                      android:textStyle="bold"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toBottomOf="@+id/ivPotates" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="₹ 20"
+                      android:textColor="@color/black"
+                      android:textSize="20dp"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toBottomOf="@+id/tvKg" />
+
+              </androidx.constraintlayout.widget.ConstraintLayout>
+
+              <LinearLayout
+                  android:id="@+id/llLast"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintTop_toTopOf="parent">
+
+                  <TextView
+                      android:id="@+id/btn_remove"
+                      android:layout_width="wrap_content"
+                      android:layout_gravity="end"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="15dp"
+                      android:text="Remove"
+                      android:textColor="@color/black"
+                      android:textSize="20dp" />
+
+                  <androidx.appcompat.widget.AppCompatButton
+                      android:id="@+id/btnAddCart"
+                      android:layout_marginStart="20dp"
+                      android:layout_width="130dp"
+                      android:layout_height="45dp"
+                      android:gravity="center"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginBottom="8dp"
+                      android:background="@drawable/bg_gradient_11"
+                      android:fontFamily="@font/gilroy_semibold"
+                      android:text="Add"
+                      android:textColor="@color/white"/>
+
+                  <LinearLayout
+                      android:id="@+id/ivButton"
+                      android:layout_width="130dp"
+                      android:layout_height="45dp"
+                      android:gravity="center"
+                      android:visibility="gone"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="20dp"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginBottom="8dp"
+                      android:background="@drawable/bg_gradient_11">
+
+                      <androidx.appcompat.widget.AppCompatImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:padding="5dp"
+                          android:id="@+id/ivMinus"
+                          android:src="@drawable/ic_baseline_remove_24"
+                          android:tint="@color/white" />
+
+                      <androidx.appcompat.widget.AppCompatTextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:padding="5dp"
+                          android:text="1"
+                          android:id="@+id/ivNo"
+                          android:layout_marginStart="25dp"
+                          android:textColor="@color/white"
+                          android:textSize="18sp" />
+
+                      <androidx.appcompat.widget.AppCompatImageView
+                          android:id="@+id/ivPlus"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:padding="3dp"
+                          android:layout_marginStart="20dp"
+                          android:src="@drawable/ic_baseline_add_24"
+                          android:tint="@color/white" />
+                  </LinearLayout>
+              </LinearLayout>-->
+            <!--tools:listitem="@layout/item_cart"-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCartList"
+                android:adapter="@{list}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@layout/item_cart" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardElevation="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹40.4"
+                        android:textColor="#388E3C"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_chekout"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_gradient_10"
+                    android:text="checkout"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</layout>
